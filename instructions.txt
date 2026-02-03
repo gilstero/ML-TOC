@@ -1,0 +1,45 @@
+-----------------------------------------------
+Written by Olin Gilster at the TangAI Lab, 2026
+-----------------------------------------------
+
+Instructions for executing an experiment with availible code:
+
+1. Please navigate to the home directory (experiment/) where you will see the following files:
+- checkflips.py
+- nonnegativemarginals.py
+- runexperiments.py
+- strictlydecreasing.py
+- strictlyincreasing.py
+- toyexamplegraph.py
+- instructions.txt
+rq/
+    - CSVtoNPY.py
+    - rq1.py
+    - rq1andrq2solutions.py
+    - timing.py
+
+2. A brief overview of every files' usecase is highlighted in the top of every file.
+
+3. To execute your own experiment please begin by downloading all needed files and utilities.
+
+4. First, execute createdatasets.py to create both the nonnegative datasets and the strictly increasing datasets.
+
+5. Second, nagivate to the rq/ directory to the file rq1.py. rq1.py runs the policies to create rankings for both the nonnegative 
+and strictly increasing datasets. More information on how to run the file is included in comments inside of rq1.py
+
+6. Finally run rq1andrq2solutions.py to get terminal prinouts of % win rate of PAG-F, ML-AUTOC values, and TOC curves.
+
+Package versions:
+These experiments were executed on python 3.9.7 - the following packages are needed:
+- numpy
+- matplotlib
+- re
+- pathlib
+- os
+- tqdm
+- sys
+- itertools
+
+Extra:
+- toyexamplegraph.py can be ran to re-create the graph that was shown in the paper (figure 1)
+- checkflips.py is a test for seeing how many flips occur in a PAG-F ranking of a dataset
