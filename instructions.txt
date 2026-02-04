@@ -1,5 +1,5 @@
 -----------------------------------------------
-Written by Olin Gilster at the TangAI Lab, 2026
+
 -----------------------------------------------
 
 Instructions for executing an experiment with availible code:

@@ -2,7 +2,7 @@
 CSVtoNPY.py is devoted to convert the PAG-F CSV ranking into a NPY format for quicker loading.
 Run this script directly.
 -----------------------------------------------
-Written by Olin Gilster at the TangAI Lab, 2026
+
 -----------------------------------------------
 """
 

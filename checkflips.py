@@ -3,7 +3,7 @@ Below is the code to check for flips in the allocations produced by PAG-F
 The code will print out a summary of any flips found, along with some examples.
 You can change the file path in the load_pag_f_csv call to check different allocation files.
 -----------------------------------------------
-Written by Olin Gilster at the TangAI Lab, 2026
+
 -----------------------------------------------
 """
 

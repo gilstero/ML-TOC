@@ -5,7 +5,7 @@ The generated datasets are saved as CSV files in their respective directories.
 I reccomend that you do not run this script twice AND keep the number of levels (L) < 4 and the number of samples (n) < 1000
 to avoid excessive computation time and storage usage.
 -----------------------------------------------
-Written by Olin Gilster at the TangAI Lab, 2026
+
 -----------------------------------------------
 """
 

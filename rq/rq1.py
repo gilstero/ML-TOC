@@ -4,7 +4,7 @@
 rq1.py generates and saves rankings for various policies on datasets of marginal benefits.
 For rq1.py to run properly the datasets must be given to the main loop in the correct directory structure.
 -----------------------------------------------
-Written by Olin Gilster at the TangAI Lab, 2026
+
 -----------------------------------------------
 """
 

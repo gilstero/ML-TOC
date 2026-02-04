@@ -2,7 +2,7 @@
 Dataset generation file for non negative marginal benefits.
 There is no neeed to execute this file directly it is imported by createdatasets.py.
 -----------------------------------------------
-Written by Olin Gilster at the TangAI Lab, 2026
+
 -----------------------------------------------
 """
 

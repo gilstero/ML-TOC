@@ -3,7 +3,7 @@ timing.py is an inidvidual file that is designed to measure the time it takes to
 It generates one type of dataset (strictly increasing marginals) for n = 500, 1000, 2000, 4000, 8000 and L = 4.
 It then ranks the policies using the generated datasets and records the time that is taken for each.
 -----------------------------------------------
-Written by Olin Gilster at the TangAI Lab, 2026
+
 -----------------------------------------------
 """
 

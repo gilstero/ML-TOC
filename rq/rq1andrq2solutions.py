@@ -5,7 +5,7 @@ RQ1 and RQ2: ML-AUTOC graphing and area output + terminal summary
 Run the file to generate ML-AUTOC plots and area summaries for specified datasets and policies.
 Edit the main block at the bottom to customize dataset selection and output options.
 -----------------------------------------------
-Written by Olin Gilster at the TangAI Lab, 2026
+
 -----------------------------------------------
 """
 
