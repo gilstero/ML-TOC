@@ -25,11 +25,11 @@ import matplotlib.cm as cm
 # -------------------
 
 DISPLAY = {
-    "pag_f": "PAG-F",
-    "pag_nf": "PAG-NF",
-    "greedy": "MEP",   # marginal effect policy
-    "gs": "GSP",
-    "prp": "PRPP",
+    "pag_f": "PAG*",
+    "pag_nf": "PAG",
+    "greedy": "PGP",   # was MEP
+    "gs": "IFP",       # was GSP
+    "prp": "LFP",      # was PRPP
 }
 # Policies that MUST be executed with precedence feasibility
 PRECEDENCE_EXEC_POLICIES = {"pag_nf", "gs", "prp"}
@@ -601,7 +601,7 @@ def plot_MLAUTOC_all_datasets(
 
             plt.plot(
                 x, m,
-                label="GSP / PAG-F / PAG-NF (overlap)",
+                label="IFP / PAG* / PAG (overlap)",
                 color="black",
                 linewidth=2.8,
                 zorder=2,
@@ -616,7 +616,7 @@ def plot_MLAUTOC_all_datasets(
 
             plt.plot(
                 x, m,
-                label="PAG-NF / PAG-F / MEP / PRPP (overlap)",
+                label="PAG / PAG* / PGP / LFP (overlap)",
                 color="black",
                 linewidth=2.8,
                 linestyle="-",
@@ -659,10 +659,10 @@ def main():
     # plot_MLAUTOC_randomchoice(dataset_idx="085")
     
     # plotting cumulative graphs for only the strictly increasing dataset
-    # plot_MLAUTOC_all_datasets(dataset_subdir="strictly_increasing", results_dir="resultsrq1", title_suffix="Strictly Increasing")
+    plot_MLAUTOC_all_datasets(dataset_subdir="strictly_increasing", results_dir="resultsrq1", title_suffix="Strictly Increasing")
 
     # plotting cumulative graphs for only the non-negative marginal dataset
-    # plot_MLAUTOC_all_datasets(dataset_subdir="nonnegative", results_dir="resultsrq1nn", title_suffix="Nonnegative")
+    plot_MLAUTOC_all_datasets(dataset_subdir="nonnegative", results_dir="resultsrq1nn", title_suffix="Nonnegative")
 
     # plotting cumulative graphs for only the 
     plot_MLAUTOC_all_datasets(dataset_subdir="strictly_decreasing", results_dir="resultsrq1sd", title_suffix="Strictly Decreasing")

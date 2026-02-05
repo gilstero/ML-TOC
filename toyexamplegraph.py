@@ -64,7 +64,7 @@ policy_levelwise_toc = [a - r for a, r in zip(policy_levelwise_ate, rand)]
 def main():
     plt.figure(figsize=(6, 4))
 
-    plt.axhline(0, linewidth=1)  # zero line: "equal to random"
+    plt.axhline(0, linewidth=1, color="black")  # zero line: "equal to random"
 
     plt.plot(
     budgets,
@@ -72,7 +72,7 @@ def main():
     linewidth=3,
     marker="o",
     markersize=7,
-    label="PAG-F",
+    label="PAG*",
     zorder=1,
     )
 
@@ -83,7 +83,7 @@ def main():
         linestyle="--",
         marker="s",
         markersize=6,
-        label="PRPP",
+        label="LFP",
         zorder=3,  # drawn on top
     )
 
@@ -94,13 +94,13 @@ def main():
         linestyle="--",
         marker="s",
         markersize=6,
-        label="GSP",
+        label="IFP",
         zorder=2,  # drawn on top
     )
-    plt.plot(budgets, policy_levelwise_toc, marker="o", label="MEP")
+    plt.plot(budgets, policy_levelwise_toc, marker="o", label="PGP")
 
     plt.xlabel("Budget (number of marginal treatments)")
-    plt.ylabel("Excess average marginal benefit over random (TOC)")
+    plt.ylabel("average marginal benefit over random (TOC Value)")
     plt.title("TOC curves for toy example policies")
     plt.xticks(budgets)
     plt.grid(True, linestyle="--", alpha=0.4)
